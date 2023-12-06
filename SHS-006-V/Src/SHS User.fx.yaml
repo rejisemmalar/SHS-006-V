@@ -844,7 +844,7 @@
 
             Label24_1 As label:
                 FontWeight: =FontWeight.Bold
-                Text: ="Add SHS Users"
+                Text: ="Ed"
                 ZIndex: =1
 
             Container19_1 As groupContainer.horizontalAutoLayoutContainer:
