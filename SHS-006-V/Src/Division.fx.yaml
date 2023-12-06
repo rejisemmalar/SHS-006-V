@@ -188,7 +188,7 @@ Division As screen:
                                 }
                             )
                         );
-                        Download(ExportFlow.Run(JSON(CSVData),"division").filelink);
+                        Download(ExportFlow.Run(JSON(CSVData),"DivisionData").filelink);
                         Clear(CSVData);
                         
                     PaddingLeft: =25

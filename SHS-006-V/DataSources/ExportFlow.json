@@ -1,8 +1,8 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
-    "FlowNameId": "7bf61eb2-fe5c-4d30-b3cf-f3ceb361e4f9",
-    "Name": "ExporttoCsv",
+    "FlowNameId": "f09929b3-3d40-4bf4-b415-95875a912656",
+    "Name": "ExportFlow",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null
