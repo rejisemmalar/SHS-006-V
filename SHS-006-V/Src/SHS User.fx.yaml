@@ -724,6 +724,10 @@
                 ZIndex: =3
 
                 Button14 As button:
+                    RadiusBottomLeft: =17
+                    RadiusBottomRight: =17
+                    RadiusTopLeft: =17
+                    RadiusTopRight: =17
                     Text: ="Save"
                     ZIndex: =1
 
