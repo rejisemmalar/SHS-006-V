@@ -14,5 +14,6 @@
         ZIndex: =2
 
         Arrow2 As arrow.backArrow:
+            OnSelect: =Navigate(Settings)
             ZIndex: =1
 
