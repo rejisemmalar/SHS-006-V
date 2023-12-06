@@ -13,7 +13,7 @@
         Y: =SHSusercomp.ComHeaderHeight
         ZIndex: =2
 
-        Arrow2 As arrow.backArrow:
+        "'Arrow(SHSuser)' As arrow.backArrow":
             OnSelect: =Navigate(Settings)
             ZIndex: =1
 
