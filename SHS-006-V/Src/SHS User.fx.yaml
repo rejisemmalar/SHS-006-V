@@ -1449,8 +1449,9 @@
             ZIndex: =1
 
             Label24_2 As label:
+                Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Text: ="Edit SHS Users"
+                Text: ="Confirmation"
                 ZIndex: =1
 
             Container19_2 As groupContainer.horizontalAutoLayoutContainer:
