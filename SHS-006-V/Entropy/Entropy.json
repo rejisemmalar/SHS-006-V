@@ -76,6 +76,7 @@
     "Arrow1_7": 320,
     "Arrow1_8": 774,
     "Arrow1_9": 537,
+    "Arrow2": 914,
     "Btn_Add_factor": 354,
     "Btn_Add_options": 525,
     "Btn_Add_options_1": 756,
@@ -897,7 +898,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/06/2023 08:49:55",
+  "HeaderLastSavedDateTimeUTC": "12/06/2023 08:50:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "5d809d0c-f856-4cdc-aac2-b07088dcc01c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6b09e5d9e40c401a9964269a06a6ff10\""
@@ -1218,6 +1219,7 @@
     "Arrow1_7": {},
     "Arrow1_8": {},
     "Arrow1_9": {},
+    "Arrow2": {},
     "Btn_Add_factor": {},
     "Btn_Add_options": {},
     "Btn_Add_options_1": {},
@@ -2114,6 +2116,7 @@
     "Arrow1_7": 358,
     "Arrow1_8": 447,
     "Arrow1_9": 542,
+    "Arrow2": 0,
     "Btn_Add_factor": 396,
     "Btn_Add_options": 606,
     "Btn_Add_options_1": 620,

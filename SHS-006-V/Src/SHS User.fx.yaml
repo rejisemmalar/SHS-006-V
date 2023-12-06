@@ -13,3 +13,6 @@
         Y: =SHSusercomp.ComHeaderHeight
         ZIndex: =2
 
+        Arrow2 As arrow.backArrow:
+            ZIndex: =1
+
