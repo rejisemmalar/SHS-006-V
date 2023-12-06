@@ -76,6 +76,7 @@
             ZIndex: =3
 
             Label22 As label:
+                Height: =Parent.Height
                 Text: ="Display Name"
                 ZIndex: =1
 
