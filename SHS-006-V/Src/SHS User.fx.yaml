@@ -67,3 +67,10 @@
                     Text: ="Add"
                     ZIndex: =3
 
+        Container9 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
