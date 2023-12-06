@@ -145,6 +145,8 @@
                         ZIndex: =1
 
                         Label23 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
                             Text: =ThisItem.'Display Name'
                             ZIndex: =1
 
@@ -159,6 +161,8 @@
                         ZIndex: =2
 
                         Label23_1 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
                             Text: =ThisItem.'Display Name'
                             ZIndex: =1
 
@@ -173,6 +177,8 @@
                         ZIndex: =3
 
                         Label23_2 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
                             Text: =ThisItem.'Display Name'
                             ZIndex: =1
 
