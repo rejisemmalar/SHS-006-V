@@ -166,7 +166,7 @@
                         Label23_1 As label:
                             Align: =Align.Center
                             FillPortions: =1
-                            Text: =ThisItem.'Designation'
+                            Text: =ThisItem.Designation
                             ZIndex: =1
 
                     Container11_3 As groupContainer.horizontalAutoLayoutContainer:
@@ -656,72 +656,6 @@
                         Y: =DataCardKey34.Y
                         ZIndex: =4
 
-                "'User Role_DataCard1' As typedDataCard.comboBoxEditCard":
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="User_x0020_Role"
-                    Default: =ThisItem.'User Role'
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"User_x0020_Role")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    Required: =true
-                    Update: =DataCardValue37.Selected
-                    Width: =300
-                    X: =0
-                    Y: =2
-                    ZIndex: =3
-
-                    DataCardKey37 As label:
-                        AutoHeight: =true
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue37 As combobox:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        DefaultSelectedItems: =Parent.Default
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        Items: =Choices([@'SHS-Users'].User_x0020_Role)
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =Choices('SHS-Users'.User_x0020_Role,DataCardValue37.SearchText)
-                        SelectMultiple: =false
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey37.Y + DataCardKey37.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage37 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue37.Y + DataCardValue37.Height
-                        ZIndex: =3
-
-                    StarVisible37 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey37.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey37.Y
-                        ZIndex: =4
-
                 Division_DataCard3 As typedDataCard.comboBoxEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Division"
@@ -788,6 +722,72 @@
                         Y: =DataCardKey36.Y
                         ZIndex: =4
 
+                "'User Role_DataCard1' As typedDataCard.comboBoxEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="User_x0020_Role"
+                    Default: =ThisItem.'User Role'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"User_x0020_Role")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue37.Selected
+                    Width: =300
+                    X: =0
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey37 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue37 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@'SHS-Users'].'User Role')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices('SHS-Users'.'User Role',DataCardValue37.SearchText)
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey37.Y + DataCardKey37.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage37 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue37.Y + DataCardValue37.Height
+                        ZIndex: =3
+
+                    StarVisible37 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey37.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey37.Y
+                        ZIndex: =4
+
             Container19 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -849,9 +849,12 @@
                 ZIndex: =1
 
             Form7_1 As form:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: ='SHS-Users'
                 Height: =400
                 Item: =Gallery7.Selected
+                LayoutMinHeight: =250
+                LayoutMinWidth: =400
                 NumberOfColumns: =2
                 ZIndex: =2
 
@@ -1358,10 +1361,10 @@
                         DefaultSelectedItems: =Parent.Default
                         DisplayFields: =["Value"]
                         DisplayMode: =Parent.DisplayMode
-                        Items: =Choices([@'SHS-Users'].User_x0020_Role)
+                        Items: =Choices([@'SHS-Users'].'User Role')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('SHS-Users'.User_x0020_Role,DataCardValue37_1.SearchText)
+                        SearchItems: =Choices('SHS-Users'.'User Role',DataCardValue37_1.SearchText)
                         SelectMultiple: =false
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
