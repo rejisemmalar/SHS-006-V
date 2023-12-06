@@ -54,3 +54,12 @@
                     X: =577
                     Y: =62
 
+                "'Add doc_Button_12' As 'Add doc_Button'":
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
+                    ZIndex: =2
+
+                Button5 As button:
+                    Text: ="Button"
+                    ZIndex: =3
+
