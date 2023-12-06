@@ -103,12 +103,3 @@ Segment As screen:
                         Width: =150
                         ZIndex: =1
 
-                    Icon18 As icon.Add:
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =40
-                        Icon: =Icon.Add
-                        TabIndex: =-8
-                        Width: =26
-                        X: =18
-                        ZIndex: =2
-
