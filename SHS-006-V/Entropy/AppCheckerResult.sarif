@@ -5894,6 +5894,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'Display Name_DataCard1_2'.DataCardValue4_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'Display Name_DataCard1_2'.DataCardValue4_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'Display Name_DataCard1_2'.DataCardValue4_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'PR Number_DataCard1_2'.DataCardValue13_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'PR Number_DataCard1_2'.DataCardValue13_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'PR Number_DataCard1_2'.DataCardValue13_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Email_DataCard1_2.DataCardValue17_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Email_DataCard1_2.DataCardValue17_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Email_DataCard1_2.DataCardValue17_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Designation_DataCard1_2.DataCardValue33_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Designation_DataCard1_2.DataCardValue33_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Designation_DataCard1_2.DataCardValue33_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'NT Login_DataCard1_2'.DataCardValue34_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'NT Login_DataCard1_2'.DataCardValue34_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'NT Login_DataCard1_2'.DataCardValue34_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Division_DataCard3_2.DataCardValue36_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Division_DataCard3_2.DataCardValue36_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Division_DataCard3_2.DataCardValue36_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'User Role_DataCard1_2'.DataCardValue37_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'User Role_DataCard1_2'.DataCardValue37_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.'User Role_DataCard1_2'.DataCardValue37_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Stakeholder_DataCard2_2.DataCardValue40_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Stakeholder_DataCard2_2.DataCardValue40_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.Deleteshsuserpopup.Container12_2.Form7_2.Stakeholder_DataCard2_2.DataCardValue40_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.dashboard"
                 }
               ],
