@@ -725,6 +725,8 @@
                 ZIndex: =3
 
                 Button14 As button:
+                    OnSelect: |-
+                        =SubmitForm(Form7);NewForm(Form7);UpdateContext({addpopupshsuser:false})
                     RadiusBottomLeft: =17
                     RadiusBottomRight: =17
                     RadiusTopLeft: =17
