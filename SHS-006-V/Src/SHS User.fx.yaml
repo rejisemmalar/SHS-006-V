@@ -48,3 +48,9 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
+                Search_12 As Search:
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
+                    X: =577
+                    Y: =62
+
