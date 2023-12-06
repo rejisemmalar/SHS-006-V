@@ -108,6 +108,28 @@
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
                 Size: =15
-                Text: ="Display Name"
+                Text: ="Action"
                 ZIndex: =4
+
+        Container10 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+            Gallery7 As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Items: ='SHS-Users'
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =60
+                ZIndex: =1
+
+                Container11 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutMode: =LayoutMode.Auto
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
 
