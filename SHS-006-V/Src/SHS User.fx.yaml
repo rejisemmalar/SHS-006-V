@@ -10,6 +10,6 @@
         LayoutMode: =LayoutMode.Auto
         Width: =App.Width-SHSusercomp.VarMenuWidth
         X: =SHSusercomp.VarMenuWidth
-        Y: =120
+        Y: =SHSusercomp.ComHeaderHeight
         ZIndex: =2
 
