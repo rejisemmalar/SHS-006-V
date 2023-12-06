@@ -223,6 +223,7 @@
             Fill: =RGBA(253, 207, 180, 1)
             FillPortions: =0
             Height: =600
+            LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -230,6 +231,14 @@
             ZIndex: =1
 
             Label24 As label:
-                Text: ="Text"
+                FontWeight: =FontWeight.Bold
+                Text: ="Add SHS Users"
                 ZIndex: =1
+
+            Form7 As form:
+                FillPortions: =0
+                Height: =400
+                LayoutMinHeight: =250
+                LayoutMinWidth: =400
+                ZIndex: =2
 
