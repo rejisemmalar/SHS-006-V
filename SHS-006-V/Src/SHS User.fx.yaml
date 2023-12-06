@@ -69,8 +69,13 @@
 
         Container9 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =80
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
+
+            Label22 As label:
+                Text: ="Display Name"
+                ZIndex: =1
 
