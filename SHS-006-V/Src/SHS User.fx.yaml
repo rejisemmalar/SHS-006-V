@@ -197,11 +197,15 @@
                         ZIndex: =4
 
                         Button6 As button:
+                            OnSelect: |-
+                                =UpdateContext({editpopupshsuser:true})
                             Text: ="Edit"
                             Width: =100
                             ZIndex: =1
 
                         Button6_1 As button:
+                            OnSelect: |-
+                                =UpdateContext({delpopupshsuser:true})
                             Text: ="Delete"
                             Width: =100
                             ZIndex: =2
