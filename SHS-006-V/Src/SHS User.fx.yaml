@@ -190,3 +190,7 @@
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =4
 
+                        Button6 As button:
+                            Text: ="Button"
+                            ZIndex: =1
+
