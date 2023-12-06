@@ -189,7 +189,7 @@ Division As screen:
                             )
                         );
                         
-                        Download(ExporttoCsv.Run(JSON(CSVData),"division"&Now()&".csv").file_link);
+                        Download(ExporttoCsv.Run(JSON(CSVData),"division.csv").file_link);
                         Clear(CSVData);
                         
                     PaddingLeft: =25
