@@ -245,6 +245,74 @@
                 LayoutMinWidth: =400
                 ZIndex: =2
 
+                Stakeholder_DataCard2 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Stakeholder"
+                    Default: =ThisItem.Stakeholder
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Stakeholder")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "Stakeholder")
+                    Required: =true
+                    Update: =DataCardValue40.Text
+                    Width: =300
+                    X: =1
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey40 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue40 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage40 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue40.Y + DataCardValue40.Height
+                        ZIndex: =3
+
+                    StarVisible40 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey40.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey40.Y
+                        ZIndex: =4
+
                 "'Display Name_DataCard1' As typedDataCard.textualEditCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Title"

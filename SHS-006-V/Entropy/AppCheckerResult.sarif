@@ -5624,6 +5624,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'SHS User'.'Addpopup(shsuser)'.Container12.Form7.Stakeholder_DataCard2.DataCardValue40.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.'Addpopup(shsuser)'.Container12.Form7.Stakeholder_DataCard2.DataCardValue40.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SHS User",
+                "type": "'SHS User'.'Addpopup(shsuser)'.Container12.Form7.Stakeholder_DataCard2.DataCardValue40"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.dashboard"
                 }
               ],
