@@ -1,0 +1,586 @@
+Segment As screen:
+
+    Component1_10 As Component1:
+        CurrentScreen: ="Administration"
+        Height: =768
+        ZIndex: =4
+
+    CanVasContainer_7 As groupContainer.manualLayoutContainer:
+        Height: =App.Height-Component1_1.ComHeaderHeight
+        Width: =App.Width-Component1_1.VarMenuWidth
+        X: =Component1_10.VarMenuWidth
+        Y: =Component1_1.ComHeaderHeight
+        ZIndex: =19
+
+        Gallery_segment As gallery.galleryVertical:
+            DelayItemLoading: =true
+            Height: =412
+            Items: =Segment_2
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =104
+            Width: =1062
+            X: =30.799999999999955
+            Y: =233
+            ZIndex: =1
+
+            Label_segmentcode As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Segment Code'
+                X: =27
+                Y: =33
+                ZIndex: =1
+
+            Label_segmentname As label:
+                Height: =33
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Segment Name'
+                Width: =196
+                X: =368
+                Y: =40
+                ZIndex: =2
+
+            btn_edit_sg As button:
+                OnSelect: |-
+                    =UpdateContext({ShowPopup_edit:true})
+                Text: ="Edit"
+                X: =700
+                Y: =33
+                ZIndex: =3
+
+            btn_del_sg As button:
+                OnSelect: |-
+                    =UpdateContext({ShowPopup_del:true});
+                Text: ="Delete"
+                Width: =136
+                X: =900
+                Y: =33
+                ZIndex: =4
+
+        Label12_1 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Segment"
+            X: =30.799999999999955
+            Y: =72
+            ZIndex: =2
+
+        Search_5 As Search:
+            X: =432
+            Y: =72
+            ZIndex: =3
+
+        Group_showpopup As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =3
+
+            Container_showPopup As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(253, 207, 180, 0.6)
+                Height: =645
+                Visible: =ShowPopup
+                Width: =1092.8
+                ZIndex: =6
+
+            Container_sg_PU_form As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(233, 79, 76, 1)
+                Height: =588
+                Visible: =ShowPopup
+                Width: =1092.8
+                Y: =57
+                ZIndex: =7
+
+                Label30 As label:
+                    Height: =58
+                    Text: ="Add Segment"
+                    Width: =322
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                Form5 As form:
+                    DataSource: =Segment_2
+                    DefaultMode: =FormMode.New
+                    Height: =269
+                    NumberOfColumns: =1
+                    X: =60
+                    Y: =147
+                    ZIndex: =2
+
+                    "'Segment Name_DataCard1' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="SegmentName"
+                        Default: =ThisItem.'Segment Name'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Segment_2],DataSourceInfo.DisplayName,"SegmentName")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "SegmentName")
+                        Required: =true
+                        Update: =DataCardValue11.Text
+                        Width: =800
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey11 As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue11 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage11 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue11.Y + DataCardValue11.Height
+                            ZIndex: =3
+
+                        StarVisible11 As label:
+                            Align: =Align.Center
+                            Height: =DataCardKey11.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey11.Y
+                            ZIndex: =4
+
+                    "'Segment Code_DataCard1' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Title"
+                        Default: =ThisItem.'Segment Code'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Segment_2],DataSourceInfo.DisplayName,"Title")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "Title")
+                        Required: =true
+                        Update: =DataCardValue3.Text
+                        Width: =800
+                        X: =0
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey3 As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue3 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage3 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue3.Y + DataCardValue3.Height
+                            ZIndex: =3
+
+                        StarVisible3 As label:
+                            Align: =Align.Center
+                            Height: =DataCardKey3.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey3.Y
+                            ZIndex: =4
+
+                Btn_Cancel As button:
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup:false})
+                    Text: ="Cancel"
+                    X: =949
+                    Y: =447
+                    ZIndex: =3
+
+                Btn_Save As button:
+                    OnSelect: |-
+                        =SubmitForm(Form5);NewForm(Form5);
+                        UpdateContext({ShowPopup:false})
+                    Text: ="Save"
+                    X: =718
+                    Y: =447
+                    ZIndex: =4
+
+        "'Add doc_Button_5' As 'Add doc_Button'":
+            X: =684
+            Y: =77
+            ZIndex: =4
+
+        Btn_Add_segment As button:
+            Fill: =RGBA(6, 89, 6, 1)
+            HoverFill: =Self.Fill
+            OnSelect: |-
+                =UpdateContext({ShowPopup : true})
+            PaddingLeft: =45
+            PressedColor: =Color.White
+            PressedFill: =Self.Fill
+            Text: ="Add"
+            X: =919
+            Y: =74
+            ZIndex: =5
+
+        Group1_Edit As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+            Container_edit As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 184, 174, 0.57)
+                Height: =645
+                Visible: =ShowPopup_edit
+                Width: =1092.8
+                ZIndex: =8
+
+            Container_edit_SG_PU As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(40, 134, 222, 1)
+                Height: =476
+                Visible: =ShowPopup_edit
+                Width: =1092.8
+                Y: =70
+                ZIndex: =9
+
+                btn_save_edit As button:
+                    OnSelect: |-
+                        =SubmitForm(Form6);UpdateContext({ShowPopup_edit:false});Notify("The division has been updated successfully",NotificationType.Success)
+                    Text: ="Save"
+                    X: =597
+                    Y: =378
+                    ZIndex: =1
+
+                btn_cancel_edit As button:
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup_edit:false})
+                    Text: ="Cancel"
+                    X: =980
+                    Y: =378
+                    ZIndex: =2
+
+                Label36 As label:
+                    Height: =56
+                    Text: ="Edit Segment"
+                    Width: =280
+                    X: =40
+                    Y: =40
+                    ZIndex: =3
+
+                Form6 As form:
+                    DataSource: =Segment_2
+                    Height: =226
+                    Item: =Gallery_segment.Selected
+                    NumberOfColumns: =1
+                    X: =60
+                    Y: =123
+                    ZIndex: =4
+
+                    "'Segment Name_DataCard2' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="SegmentName"
+                        Default: =ThisItem.'Segment Name'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Segment_2],DataSourceInfo.DisplayName,"SegmentName")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "SegmentName")
+                        Required: =true
+                        Update: =DataCardValue32.Text
+                        Width: =800
+                        X: =0
+                        Y: =0
+                        ZIndex: =5
+
+                        DataCardKey32 As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue32 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage32 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue32.Y + DataCardValue32.Height
+                            ZIndex: =3
+
+                        StarVisible32 As label:
+                            Align: =Align.Center
+                            Height: =DataCardKey32.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey32.Y
+                            ZIndex: =4
+
+                    "'Segment Code_DataCard2' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Title"
+                        Default: =ThisItem.'Segment Code'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Segment_2],DataSourceInfo.DisplayName,"Title")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "Title")
+                        Required: =true
+                        Update: =DataCardValue31.Text
+                        Width: =800
+                        X: =0
+                        Y: =1
+                        ZIndex: =5
+
+                        DataCardKey31 As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue31 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage31 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue31.Y + DataCardValue31.Height
+                            ZIndex: =3
+
+                        StarVisible31 As label:
+                            Align: =Align.Center
+                            Height: =DataCardKey31.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey31.Y
+                            ZIndex: =4
+
+        Group_delete As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =7
+
+            Container_sg_del_PU As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(233, 79, 76, 0.55)
+                Height: =645
+                Visible: =ShowPopup_del
+                Width: =1092.8
+                ZIndex: =10
+
+            container_del_confirmation As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(83, 144, 164, 1)
+                Height: =314
+                Visible: =ShowPopup_del
+                Width: =695
+                X: =339
+                Y: =274
+                ZIndex: =11
+
+                Label34 As label:
+                    Text: ="Confirmation"
+                    X: =270
+                    Y: =45
+                    ZIndex: =1
+
+                Label35 As label:
+                    Align: =Align.Center
+                    Height: =81
+                    Text: ="Are You Sure You Want to Delete"
+                    Width: =438
+                    X: =126
+                    Y: =116
+                    ZIndex: =2
+
+                Btn_yes As button:
+                    OnSelect: |-
+                        =Remove(Segment_2,Gallery_segment.Selected);UpdateContext({ShowPopup_del:false});Notify("The divison has been deleted successfully",NotificationType.Success)
+                    Text: ="Yes"
+                    X: =143
+                    Y: =225
+                    ZIndex: =3
+
+                Btn_No As button:
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup_del:false})
+                    Text: ="No"
+                    X: =420
+                    Y: =225
+                    ZIndex: =4
+
+        "'Segment code' As label":
+            Height: =46
+            Text: ="Segment Code"
+            Width: =270
+            X: =35.799999999999955
+            Y: =171
+            ZIndex: =12
+
+        Action_segment As label:
+            Height: =46
+            Text: ="Action"
+            Width: =270
+            X: =810.8
+            Y: =174
+            ZIndex: =13
+
+        "'Segment name' As label":
+            Height: =46
+            Text: ="Segment Name"
+            Width: =270
+            X: =389.79999999999995
+            Y: =171
+            ZIndex: =14
+
+        Arrow1_5 As arrow.backArrow:
+            Fill: =RGBA(0, 18, 107, 1)
+            Height: =34
+            OnSelect: =Navigate(Administration)
+            Width: =32
+            X: =30.799999999999955
+            Y: =24
+            ZIndex: =15
+
+        Icon5_4 As icon.HorizontalLine:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
+            Color: =RGBA(214, 223, 238, 1)
+            FocusedBorderThickness: =1
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Rotation: =1
+            Width: =1050
+            X: =30.799999999999955
+            Y: =150
+            ZIndex: =16
+
+        Icon18 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =36
+            Icon: =Icon.Add
+            Width: =34
+            X: =941
+            Y: =74
+            ZIndex: =17
+
