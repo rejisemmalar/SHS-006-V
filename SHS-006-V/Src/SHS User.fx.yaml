@@ -64,6 +64,7 @@
                     ZIndex: =2
 
                 Button5 As button:
+                    Fill: =RGBA(5, 89, 8, 1)
                     Text: ="Add"
                     ZIndex: =3
 
@@ -186,6 +187,7 @@
                         DropShadow: =DropShadow.None
                         Height: =60
                         LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =60
                         LayoutMinWidth: =250
