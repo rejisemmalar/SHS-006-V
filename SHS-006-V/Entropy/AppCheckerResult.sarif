@@ -6374,36 +6374,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'SHS User'.delpopupshsuser"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'SHS User'.delpopupshsuser",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "delpopupshsuser",
-                "module": "SHS User",
-                "type": "'SHS User'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Inbox.CanVasContainer_1.Y"
                 }
               ],
