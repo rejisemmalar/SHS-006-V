@@ -222,6 +222,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(253, 207, 180, 1)
             FillPortions: =0
+            Height: =600
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
