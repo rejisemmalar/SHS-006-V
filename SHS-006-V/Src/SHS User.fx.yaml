@@ -715,6 +715,8 @@
                         ZIndex: =4
 
             Container19 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -725,6 +727,6 @@
                     ZIndex: =1
 
                 Button14_1 As button:
-                    Text: ="Save"
+                    Text: ="Cancel"
                     ZIndex: =2
 
