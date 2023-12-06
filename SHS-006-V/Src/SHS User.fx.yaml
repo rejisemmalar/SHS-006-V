@@ -1477,6 +1477,8 @@
 
             Container24 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -1487,6 +1489,6 @@
                     ZIndex: =1
 
                 Button15_1 As button:
-                    Text: ="Yes"
+                    Text: ="No"
                     ZIndex: =2
 
