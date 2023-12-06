@@ -1440,7 +1440,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(253, 207, 180, 1)
             FillPortions: =0
-            Height: =500
+            Height: =300
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -1456,13 +1456,18 @@
                 Width: =250
                 ZIndex: =1
 
-            Container19_2 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.None
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =15
-                LayoutJustifyContent: =LayoutJustifyContent.Center
+            Container23 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =3
+                ZIndex: =2
+
+                Label24_3 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =20
+                    Text: ="Confirmation"
+                    Width: =250
+                    ZIndex: =1
 
