@@ -9,7 +9,7 @@
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =App.Width-SHSusercomp.VarMenuWidth
-        X: =280
+        X: =SHSusercomp.VarMenuWidth
         Y: =120
         ZIndex: =2
 

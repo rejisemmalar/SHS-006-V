@@ -6,7 +6,14 @@
         "BorderColor",
         "BorderStyle",
         "Fill",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "280",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         {
           "AFDDataSourceName": "",
