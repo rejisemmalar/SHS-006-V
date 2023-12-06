@@ -130,7 +130,5 @@
 
                 Container11 As groupContainer.horizontalAutoLayoutContainer:
                     LayoutMode: =LayoutMode.Auto
-                    X: =40
-                    Y: =40
                     ZIndex: =1
 
