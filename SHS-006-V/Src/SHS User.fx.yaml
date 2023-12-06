@@ -716,7 +716,7 @@
 
             Container19 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =10
+                LayoutGap: =15
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
