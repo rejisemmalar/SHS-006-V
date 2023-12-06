@@ -60,6 +60,7 @@
                     ZIndex: =2
 
                 Button5 As button:
-                    Text: ="Button"
+                    Fill: =RGBA(23, 133, 11, 0)
+                    Text: ="Add"
                     ZIndex: =3
 
