@@ -1431,7 +1431,6 @@
         LayoutDirection: =LayoutDirection.Vertical
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
-        Visible: =editpopupshsuser
         Width: =App.Width-SHSusercomp.VarMenuWidth
         X: =SHSusercomp.VarMenuWidth
         Y: =SHSusercomp.ComHeaderHeight
