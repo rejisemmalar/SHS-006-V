@@ -109,7 +109,7 @@ Component1 As CanvasComponent:
                 SubMenu: Table(
                     {
                         Title: "SHS Configuration",
-                        TargetScreen: 'HACT Configuration',
+                        TargetScreen: 'SHS Configuration',
                         Icon: Icon.OptionsList
                     },
                     {

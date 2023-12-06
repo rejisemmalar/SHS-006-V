@@ -1,4 +1,4 @@
-"'HACT Configuration' As screen":
+"'SHS Configuration' As screen":
 
     Component1_18 As Component1:
         CurrentScreen: ="Configuration"

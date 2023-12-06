@@ -5804,19 +5804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Y"
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Y",
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "HACT Configuration",
-                "type": "'HACT Configuration'.CanVasContainer_16"
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
               }
             }
           ],
@@ -5834,19 +5834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Width"
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Width"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Width",
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Width",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Width",
-                "module": "HACT Configuration",
-                "type": "'HACT Configuration'.CanVasContainer_16"
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
               }
             }
           ],
@@ -5864,19 +5864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Height"
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'HACT Configuration'.CanVasContainer_16.Height",
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "HACT Configuration",
-                "type": "'HACT Configuration'.CanVasContainer_16"
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
               }
             }
           ],

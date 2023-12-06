@@ -13,7 +13,7 @@ Configuration As screen:
                 },
                 {
                     Title: "HACT Configuration",
-                    TargetScreen: 'HACT Configuration'
+                    TargetScreen: 'SHS Configuration'
                 }
             )
         X: =339
