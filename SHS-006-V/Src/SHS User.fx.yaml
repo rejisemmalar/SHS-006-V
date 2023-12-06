@@ -1478,6 +1478,7 @@
             Container24 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -1485,6 +1486,8 @@
                 ZIndex: =3
 
                 Button15 As button:
+                    OnSelect: |-
+                        =Remove('SHS-Users',Gallery7.Selected);UpdateContext({delpopupshsuser:false})
                     Text: ="Yes"
                     ZIndex: =1
 
