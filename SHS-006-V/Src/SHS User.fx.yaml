@@ -35,8 +35,9 @@
 
                 Label21 As label:
                     FillPortions: =1
+                    FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
-                    Size: =30
+                    Size: =20
                     Text: ="SHS User"
                     ZIndex: =1
 
