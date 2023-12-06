@@ -33,3 +33,14 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =1
 
+                Label21 As label:
+                    Text: ="SHS User"
+                    ZIndex: =1
+
+            Container8_1 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =Parent.Height
+                LayoutMinHeight: =80
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =2
+
