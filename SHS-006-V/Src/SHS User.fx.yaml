@@ -26,3 +26,9 @@
             Width: =Parent.Width
             ZIndex: =2
 
+            Container8 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
