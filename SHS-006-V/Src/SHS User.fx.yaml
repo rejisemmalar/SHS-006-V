@@ -65,6 +65,8 @@
 
                 Button5 As button:
                     Fill: =RGBA(5, 89, 8, 1)
+                    OnSelect: |-
+                        =UpdateContext({addpopupshsuser:true})
                     Text: ="Add"
                     ZIndex: =3
 
