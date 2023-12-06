@@ -90,7 +90,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
                 Size: =15
-                Text: ="Display Name"
+                Text: ="Designation"
                 ZIndex: =2
 
             Label22_5 As label:
