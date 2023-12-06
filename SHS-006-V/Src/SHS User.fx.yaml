@@ -209,10 +209,21 @@
     "'Addpopup(shsuser)' As groupContainer.verticalAutoLayoutContainer":
         Fill: =RGBA(122, 138, 143, 0.47)
         Height: =App.Height-SHSusercomp.ComHeaderHeight
+        LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         Width: =App.Width-SHSusercomp.VarMenuWidth
         X: =SHSusercomp.VarMenuWidth
         Y: =SHSusercomp.ComHeaderHeight
         ZIndex: =3
+
+        Container12 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(253, 207, 180, 1)
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
 
