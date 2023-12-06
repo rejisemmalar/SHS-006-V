@@ -137,15 +137,19 @@
                     Container11_1 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Height: =60
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =1
 
+                        Label23 As label:
+                            Text: =ThisItem.'Display Name'
+                            ZIndex: =1
+
                     Container11_2 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Height: =60
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =2
@@ -153,7 +157,7 @@
                     Container11_3 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Height: =60
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =3
@@ -161,7 +165,7 @@
                     Container11_4 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Height: =60
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =4
