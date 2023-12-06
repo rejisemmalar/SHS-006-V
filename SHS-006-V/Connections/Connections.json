@@ -78,7 +78,67 @@
       "MapDiv(subfactors)"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "809d6fc8-5caa-4026-9770-2b749d4a7575"
+    ],
     "id": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
+  },
+  "6bfa26aa-400d-4c1f-ab1e-de768d2078d4": {
+    "connectionRef": {
+      "displayName": "Notifications",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1657/1.0.1657.3440/flowpush/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_flowpush"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "809d6fc8-5caa-4026-9770-2b749d4a7575"
+    ],
+    "id": "6bfa26aa-400d-4c1f-ab1e-de768d2078d4"
+  },
+  "809d6fc8-5caa-4026-9770-2b749d4a7575": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "7bf61eb2-fe5c-4d30-b3cf-f3ceb361e4f9"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "7bf61eb2-fe5c-4d30-b3cf-f3ceb361e4f9"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExporttoCsv"
+    ],
+    "dependencies": {
+      "shared_flowpush": "6bfa26aa-400d-4c1f-ab1e-de768d2078d4",
+      "shared_onedriveforbusiness": "b8a1f2b9-1f95-425a-a240-f900637193b0",
+      "shared_sharepointonline": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
+    },
+    "dependents": [],
+    "id": "809d6fc8-5caa-4026-9770-2b749d4a7575"
+  },
+  "b8a1f2b9-1f95-425a-a240-f900637193b0": {
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "809d6fc8-5caa-4026-9770-2b749d4a7575"
+    ],
+    "id": "b8a1f2b9-1f95-425a-a240-f900637193b0"
   }
 }

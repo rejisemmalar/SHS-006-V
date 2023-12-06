@@ -177,6 +177,20 @@ Division As screen:
 
                 Button5_1 As button:
                     LayoutMinWidth: =120
+                    OnSelect: |+
+                        =ForAll(
+                            Gallery6.AllItems As Data,
+                            Collect(
+                                CSVData,
+                                {
+                                    DivisiovCode: Data.'Division Code',
+                                    DivisiovName: Data.'Division Name'
+                                }
+                            )
+                        );
+                        Set(CSV,JSON(CSVData));
+                        Launch(ExporttoCsv.Run(CSV,"division").file_link);
+                        
                     PaddingLeft: =25
                     Text: ="Export"
                     Width: =116
