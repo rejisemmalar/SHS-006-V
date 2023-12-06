@@ -735,6 +735,8 @@
                     ZIndex: =1
 
                 Button14_1 As button:
+                    OnSelect: |-
+                        =UpdateContext({addpopupshsuser:false})
                     RadiusBottomLeft: =15
                     RadiusBottomRight: =15
                     RadiusTopLeft: =15
