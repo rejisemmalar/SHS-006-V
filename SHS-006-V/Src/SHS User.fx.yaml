@@ -185,6 +185,8 @@
                     Container11_4 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Height: =60
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
@@ -196,7 +198,7 @@
                             ZIndex: =1
 
                         Button6_1 As button:
-                            Text: ="Edit"
+                            Text: ="Delete"
                             Width: =100
                             ZIndex: =2
 
