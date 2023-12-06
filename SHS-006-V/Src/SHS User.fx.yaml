@@ -715,6 +715,7 @@
                         ZIndex: =4
 
             Container19 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutGap: =15
                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -732,6 +733,10 @@
                     ZIndex: =1
 
                 Button14_1 As button:
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Text: ="Cancel"
                     ZIndex: =2
 
