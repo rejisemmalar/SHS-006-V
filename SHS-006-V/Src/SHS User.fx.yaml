@@ -1467,7 +1467,7 @@
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
                     Size: =20
-                    Text: ="Confirmation"
+                    Text: ="Are you sur you want to delete?"
                     Width: =250
                     ZIndex: =1
 
