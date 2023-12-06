@@ -1475,3 +1475,14 @@
                     Width: =250
                     ZIndex: =1
 
+            Container24 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Button15 As button:
+                    Text: ="Button"
+                    ZIndex: =1
+
