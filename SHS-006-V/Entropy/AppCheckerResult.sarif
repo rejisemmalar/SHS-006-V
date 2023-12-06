@@ -3194,19 +3194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'SHS User'.Container6.'Arrow(SHSuser)'.TabIndex"
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'SHS User'.Container6.'Arrow(SHSuser)'.TabIndex",
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SHS User",
-                "type": "'SHS User'.Container6.'Arrow(SHSuser)'"
+                "type": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'"
               }
             }
           ],
@@ -3224,19 +3224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'SHS User'.Container6.'Arrow(SHSuser)'.AccessibleLabel"
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'SHS User'.Container6.'Arrow(SHSuser)'.AccessibleLabel",
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SHS User",
-                "type": "'SHS User'.Container6.'Arrow(SHSuser)'"
+                "type": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'"
               }
             }
           ],

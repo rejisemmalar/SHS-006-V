@@ -4,7 +4,7 @@
         CurrentScreen: ="Settings"
         Height: =768
 
-    Container6 As groupContainer.verticalAutoLayoutContainer:
+    "'Main(shsuser)' As groupContainer.verticalAutoLayoutContainer":
         Height: =App.Height-SHSusercomp.ComHeaderHeight
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -18,6 +18,7 @@
             ZIndex: =1
 
         Container7 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =80
             LayoutMinHeight: =100
