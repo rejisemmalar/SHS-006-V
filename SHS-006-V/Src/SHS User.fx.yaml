@@ -191,6 +191,7 @@
                         ZIndex: =4
 
                         Button6 As button:
-                            Text: ="Button"
+                            Text: ="Edit"
+                            Width: =100
                             ZIndex: =1
 
