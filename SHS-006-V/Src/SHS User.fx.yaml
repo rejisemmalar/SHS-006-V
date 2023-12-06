@@ -656,72 +656,6 @@
                         Y: =DataCardKey34.Y
                         ZIndex: =4
 
-                Division_DataCard3 As typedDataCard.comboBoxEditCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="Division"
-                    Default: =ThisItem.Division
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Division")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    Required: =true
-                    Update: =DataCardValue36.Selected
-                    Width: =300
-                    X: =2
-                    Y: =1
-                    ZIndex: =3
-
-                    DataCardKey36 As label:
-                        AutoHeight: =true
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue36 As combobox:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        DefaultSelectedItems: =Parent.Default
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        Items: =Choices([@'SHS-Users'].Division)
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =Choices('SHS-Users'.Division,DataCardValue36.SearchText)
-                        SelectMultiple: =false
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey36.Y + DataCardKey36.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage36 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue36.Y + DataCardValue36.Height
-                        ZIndex: =3
-
-                    StarVisible36 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey36.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey36.Y
-                        ZIndex: =4
-
                 "'User Role_DataCard1' As typedDataCard.comboBoxEditCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="User_x0020_Role"
@@ -786,6 +720,72 @@
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey37.Y
+                        ZIndex: =4
+
+                Division_DataCard3 As typedDataCard.comboBoxEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Division"
+                    Default: =ThisItem.Division
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Division")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue36.Selected
+                    Width: =300
+                    X: =2
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey36 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue36 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@'SHS-Users'].Division)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices('SHS-Users'.Division,DataCardValue36.SearchText)
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage36 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue36.Y + DataCardValue36.Height
+                        ZIndex: =3
+
+                    StarVisible36 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey36.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey36.Y
                         ZIndex: =4
 
             Container19 As groupContainer.horizontalAutoLayoutContainer:
@@ -1434,6 +1434,7 @@
         LayoutDirection: =LayoutDirection.Vertical
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
+        Visible: =delpopupshsuser
         Width: =App.Width-SHSusercomp.VarMenuWidth
         X: =SHSusercomp.VarMenuWidth
         Y: =SHSusercomp.ComHeaderHeight
@@ -1495,6 +1496,8 @@
                     ZIndex: =1
 
                 Button15_1 As button:
+                    OnSelect: |-
+                        =UpdateContext({delpopupshsuser:false})
                     Text: ="No"
                     ZIndex: =2
 
