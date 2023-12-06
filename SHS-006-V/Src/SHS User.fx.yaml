@@ -1492,6 +1492,8 @@
                     ZIndex: =1
 
                 Button15_1 As button:
+                    OnSelect: |-
+                        =UpdateContext({delpopupshsuser:false})
                     Text: ="No"
                     ZIndex: =2
 
