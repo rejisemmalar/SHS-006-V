@@ -76,8 +76,38 @@
             ZIndex: =3
 
             Label22 As label:
+                Align: =Align.Center
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
-                Size: =17
+                Size: =15
                 Text: ="Display Name"
                 ZIndex: =1
+
+            Label22_4 As label:
+                Align: =Align.Center
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =15
+                Text: ="Display Name"
+                ZIndex: =2
+
+            Label22_5 As label:
+                Align: =Align.Center
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =15
+                Text: ="Display Name"
+                ZIndex: =3
+
+            Label22_6 As label:
+                Align: =Align.Center
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =15
+                Text: ="Display Name"
+                ZIndex: =4
 
