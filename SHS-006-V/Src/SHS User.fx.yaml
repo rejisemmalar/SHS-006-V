@@ -17,3 +17,10 @@
             OnSelect: =Navigate(Settings)
             ZIndex: =1
 
+        Container7 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
