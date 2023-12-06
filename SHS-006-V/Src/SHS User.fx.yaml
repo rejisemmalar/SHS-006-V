@@ -125,6 +125,7 @@
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =60
+                Width: =Parent.Width
                 ZIndex: =1
 
                 Container11 As groupContainer.horizontalAutoLayoutContainer:
