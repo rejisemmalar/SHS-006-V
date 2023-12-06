@@ -226,5 +226,6 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            Width: =900
             ZIndex: =1
 
