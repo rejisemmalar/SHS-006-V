@@ -1451,6 +1451,7 @@
             Label24_2 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
+                Size: =30
                 Text: ="Confirmation"
                 ZIndex: =1
 
