@@ -1458,6 +1458,8 @@
 
             Container23 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
+                Height: =100
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -1465,9 +1467,11 @@
 
                 Label24_3 As label:
                     Align: =Align.Center
+                    FillPortions: =1
                     FontWeight: =FontWeight.Bold
+                    Height: =
                     Size: =20
-                    Text: ="Are you sur you want to delete?"
+                    Text: ="Are you sure you want to delete?"
                     Width: =250
                     ZIndex: =1
 
