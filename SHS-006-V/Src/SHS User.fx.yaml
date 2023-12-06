@@ -99,7 +99,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
                 Size: =15
-                Text: ="Display Name"
+                Text: ="User Role"
                 ZIndex: =3
 
             Label22_6 As label:
