@@ -5,6 +5,7 @@
         Height: =768
 
     "'Main(shsuser)' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.None
         Height: =App.Height-SHSusercomp.ComHeaderHeight
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
