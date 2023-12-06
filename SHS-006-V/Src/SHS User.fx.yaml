@@ -129,7 +129,7 @@
                 ZIndex: =1
 
                 Container11 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =Parent.Height
+                    Height: =60
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =1
 
