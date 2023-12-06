@@ -844,13 +844,13 @@
 
             Label24_1 As label:
                 FontWeight: =FontWeight.Bold
-                Text: ="Add SHS Users"
+                Text: ="Edit SHS Users"
                 ZIndex: =1
 
             Form7_1 As form:
                 DataSource: ='SHS-Users'
-                DefaultMode: =FormMode.New
                 Height: =400
+                Item: =Gallery7.Selected
                 NumberOfColumns: =2
                 ZIndex: =2
 
@@ -1405,7 +1405,7 @@
 
                 Button14_2 As button:
                     OnSelect: |-
-                        =SubmitForm(Form7_1);NewForm(Form7_1);UpdateContext({addpopupshsuser:false})
+                        =SubmitForm(Form7_1); UpdateContext({addpopupshsuser:false})
                     RadiusBottomLeft: =17
                     RadiusBottomRight: =17
                     RadiusTopLeft: =17
