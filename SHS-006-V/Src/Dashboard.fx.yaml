@@ -41,5 +41,107 @@ Dashboard As screen:
 
     Component1_1 As Component1:
         Height: =768
+        Menu: |
+            =Table(
+                {
+                    Title: "Dashboard",
+                    TargetScreen: Dashboard,
+                    Icon: Icon.DetailList
+                },
+                {
+                    Title: "Inbox",
+                    TargetScreen: App.ActiveScreen,
+                    SubMenu: Table(
+                        {
+                            Title: "All Study",
+                            TargetScreen: 'All Study',
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "All Initiatives ",
+                            TargetScreen: 'All Initiatives',
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "For Admin Action ",
+                            TargetScreen:'For Admin Action',
+                            Icon: Icon.Check
+                        }
+                    )
+                },
+                {
+                    Title: "Administration",
+                    TargetScreen: App.ActiveScreen,
+                    SubMenu: Table(
+                        {
+                            Title: "Division",
+                            TargetScreen: Division,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Segment ",
+                            TargetScreen: Segment,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Segment Member",
+                            TargetScreen: 'Segment Member',
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Factor",
+                            TargetScreen: Factors,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Subfactors",
+                            TargetScreen: Subfactors,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Questions",
+                            TargetScreen: Questions,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Options",
+                            TargetScreen: Options,
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Study",
+                            TargetScreen: Options,
+                            Icon: Icon.OptionsList
+                        }
+                    )
+                },
+                {
+                    Title: "Settings",
+                    TargetScreen: App.ActiveScreen,
+                    SubMenu: Table(
+                        {
+                            Title: "SHS User",
+                            TargetScreen: 'SHS User',
+                            Icon: Icon.OptionsList
+                        }
+                    )
+                },
+                {
+                    Title: "Configuration",
+                    TargetScreen: App.ActiveScreen,
+                    SubMenu: Table(
+                        {
+                            Title: "SHS Configuration",
+                            TargetScreen: 'SHS Configuration',
+                            Icon: Icon.OptionsList
+                        },
+                        {
+                            Title: "Upload Result",
+                            TargetScreen: 'Upload Result',
+                            Icon: Icon.OptionsList
+                        }
+                    )
+                }
+            )
         ZIndex: =4
 

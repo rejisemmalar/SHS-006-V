@@ -205,7 +205,14 @@
         "X",
         "Y",
         "ZIndex",
-        "Menu",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table(\n    {\n        Title: \"Dashboard\",\n        TargetScreen: Dashboard,\n        Icon: Icon.DetailList\n    },\n    {\n        Title: \"Inbox\",\n        TargetScreen: App.ActiveScreen,\n        SubMenu: Table(\n            {\n                Title: \"All Study\",\n                TargetScreen: 'All Study',\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"All Initiatives \",\n                TargetScreen: 'All Initiatives',\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"For Admin Action \",\n                TargetScreen:'For Admin Action',\n                Icon: Icon.Check\n            }\n        )\n    },\n    {\n        Title: \"Administration\",\n        TargetScreen: App.ActiveScreen,\n        SubMenu: Table(\n            {\n                Title: \"Division\",\n                TargetScreen: Division,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Segment \",\n                TargetScreen: Segment,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Segment Member\",\n                TargetScreen: 'Segment Member',\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Factor\",\n                TargetScreen: Factors,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Subfactors\",\n                TargetScreen: Subfactors,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Questions\",\n                TargetScreen: Questions,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Options\",\n                TargetScreen: Options,\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Study\",\n                TargetScreen: Options,\n                Icon: Icon.OptionsList\n            }\n        )\n    },\n    {\n        Title: \"Settings\",\n        TargetScreen: App.ActiveScreen,\n        SubMenu: Table(\n            {\n                Title: \"SHS User\",\n                TargetScreen: 'HACT User',\n                Icon: Icon.OptionsList\n            }\n        )\n    },\n    {\n        Title: \"Configuration\",\n        TargetScreen: App.ActiveScreen,\n        SubMenu: Table(\n            {\n                Title: \"SHS Configuration\",\n                TargetScreen: 'HACT Configuration',\n                Icon: Icon.OptionsList\n            },\n            {\n                Title: \"Upload Result\",\n                TargetScreen: 'Upload Result',\n                Icon: Icon.OptionsList\n            }\n \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0)\n\u00A0\u00A0\u00A0\u00A0}\n)\n",
+          "InvariantPropertyName": "Menu",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -244,7 +251,7 @@
         {
           "Category": "Data",
           "PropertyName": "Menu",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
