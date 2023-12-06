@@ -43,6 +43,9 @@
 
             Container8_1 As groupContainer.horizontalAutoLayoutContainer:
                 Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =80
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
