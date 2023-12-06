@@ -1,13 +1,13 @@
 "'SHS User' As screen":
 
-    Component1_16 As Component1:
+    SHSusercomp As Component1:
         CurrentScreen: ="Settings"
         Height: =768
 
     CanVasContainer_14 As groupContainer.manualLayoutContainer:
         Height: =App.Height-Component1_1.ComHeaderHeight
         Width: =App.Width-Component1_1.VarMenuWidth
-        X: =Component1_16.VarMenuWidth
+        X: =SHSusercomp.VarMenuWidth
         Y: =Component1_1.ComHeaderHeight
         ZIndex: =22
 
