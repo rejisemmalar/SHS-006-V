@@ -229,3 +229,7 @@
             Width: =900
             ZIndex: =1
 
+            Label24 As label:
+                Text: ="Text"
+                ZIndex: =1
+
