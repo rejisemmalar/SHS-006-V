@@ -237,6 +237,7 @@
 
             Form7 As form:
                 DataSource: ='SHS-Users'
+                DefaultMode: =FormMode.New
                 FillPortions: =0
                 Height: =400
                 LayoutMinHeight: =250
