@@ -98,7 +98,7 @@ Component1 As CanvasComponent:
                 SubMenu: Table(
                     {
                         Title: "SHS User",
-                        TargetScreen: 'HACT User',
+                        TargetScreen: 'SHS User',
                         Icon: Icon.OptionsList
                     }
                 )

@@ -6,7 +6,7 @@ Settings As screen:
 
     "'Settings(com)_1' As 'Settings(com)'":
         Settings_menu: |-
-            =Table({Title:"HACT User",TargetScreen:'HACT User'})
+            =Table({Title:"HACT User",TargetScreen:'SHS User'})
         X: =284
         Y: =134
         ZIndex: =2
