@@ -34,6 +34,7 @@
                 ZIndex: =1
 
                 Label21 As label:
+                    FillPortions: =1
                     Height: =Parent.Height
                     Text: ="SHS User"
                     ZIndex: =1
